@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amit Jadhav — Web Developer</title>
+  <meta name="description" content="Amit Jadhav — Frontend Developer. Portfolio with projects, skills, resume and contact." />
+  <meta property="og:title" content="Amit Jadhav — Web Developer" />
+  <meta property="og:description" content="Portfolio of Amit Jadhav. Responsive web & frontend projects." />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Amit<span class="accent">.</span></a>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <h1>Hello — I'm <span class="name">Amit Jadhav</span></h1>
+        <p class="lead">
+          Frontend Developer building responsive, accessible, & modern web experiences. I turn ideas into polished products.
+        </p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn outline" href="assets/resume.pdf" download>Download CV</a>
+        </div>
+        <ul class="social-inline">
+          <li><a href="https://github.com/amitjadhav1-web" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/amit-jadhav" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <img src="assets/hero.jpg" alt="Decorative hero image" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container card">
+      <h2>About me</h2>
+      <p>
+        I build front-end apps with a focus on performance, accessibility and clean UI. Experienced in HTML, CSS, JS and React.
+      </p>
+      <div class="about-grid">
+        <div>
+          <h3>Experience</h3>
+          <p>Internships & freelance — UI/UX & website builds</p>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <p>BCA / Self learning — Web development</p>
+        </div>
+        <div>
+          <h3>Interests</h3>
+          <p>Design systems, performance & building portfolio projects</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <div class="section-head">
+        <h2>Selected Projects</h2>
+        <p>Hand-picked projects that show real-world skills — code + live demos.</p>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project cards added via JS or paste static cards -->
+        <article class="project-card" tabindex="0" data-title="Portfolio Website" data-desc="Responsive portfolio built with HTML/CSS/JS. Hosted on GitHub Pages." data-image="assets/hero.jpg" data-links='{"code":"https://github.com/amitjadhav1-web/DeloTech","demo":"https://amitjadhav1-web.github.io/DeloTech/"}'>
+          <img src="assets/hero.jpg" alt="" />
+          <div class="project-body">
+            <h3>Portfolio Website</h3>
+            <p>Responsive, animations, dark mode.</p>
+            <div class="card-actions">
+              <button class="btn small view-btn">Quick view</button>
+              <a class="btn small" href="https://github.com/amitjadhav1-web/DeloTech" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" tabindex="0" data-title="To-Do App" data-desc="Task manager with CRUD and local storage." data-image="https://source.unsplash.com/collection/190727/800x600" data-links='{"code":"#","demo":"#"}'>
+          <img src="https://source.unsplash.com/collection/190727/800x600" alt="" />
+          <div class="project-body">
+            <h3>To-Do App</h3>
+            <p>CRUD + Local Storage + Responsive layout</p>
+            <div class="card-actions">
+              <button class="btn small view-btn">Quick view</button>
+              <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- add more cards similarly -->
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container card">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>HTML</h4>
+          <div class="meter"><span style="width:95%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>CSS / Sass</h4>
+          <div class="meter"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>JavaScript</h4>
+          <div class="meter"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>React</h4>
+          <div class="meter"><span style="width:70%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Interested in working together? Send a message or download my CV.</p>
+
+      <form id="contact-form" class="contact-form" action="javascript:void(0);">
+        <div class="form-row">
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+        </div>
+        <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send message</button>
+          <a class="btn outline" href="mailto:amit@example.com">Email me</a>
+        </div>
+        <p class="form-note">Tip: To enable netless contact without a back-end, connect EmailJS (instructions in README).</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Amit Jadhav — Built with ❤️ · <a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <!-- Project modal -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div class="modal-body">
+        <img id="modal-image" src="" alt="" />
+        <div class="modal-text">
+          <h3 id="modal-title"></h3>
+          <p id="modal-desc"></p>
+          <div id="modal-links" class="modal-links"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
